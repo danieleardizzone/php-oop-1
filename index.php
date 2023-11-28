@@ -5,7 +5,7 @@ class Production {
     public $language;
     public $rating;
 
-    function __constructor($_title, $_language, $_rating) {
+    function __construct($_title, $_language, $_rating) {
         $this->title = $_title;
         $this->language = $_language;
         $this->ratig = $_rating;
