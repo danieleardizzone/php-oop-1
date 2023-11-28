@@ -8,7 +8,7 @@ class Production {
     function __construct($_title, $_language, $_rating) {
         $this->title = $_title;
         $this->language = $_language;
-        $this->ratig = $_rating;
+        $this->rating = $_rating;
     }
 }
 
@@ -22,4 +22,13 @@ $belluscone = new Production('Belluscone', 'it', '3');
 
 $productions = [$hp, $rambo, $matrix, $belluscone];
 
-var_dump($productions);
+// var_dump($productions);
+
+foreach($productions as $production){
+?>
+<h3><?= $production->title ?></h3>
+<p>language: <?= $production->language ?></p>
+<p>rating: <?= $production->rating ?>/5</p>
+<?php  
+}
+?>
